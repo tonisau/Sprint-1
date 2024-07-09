@@ -1,6 +1,5 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-// Classe abstracta Instrument
+package n1exercici1;
+
 abstract class Instrument {
     // Atributs de classe
     private String nom;
