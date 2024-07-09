@@ -30,6 +30,7 @@ class Vent extends Instrument {
 }
 
 // Classe Corda que hereta de Instrument
+// test
 class Corda extends Instrument {
     public Corda(String nom, double preu) {
         super(nom, preu);
