@@ -1,57 +1,5 @@
 package n1exercici1;
 
-abstract class Instrument {
-    // Atributs de classe
-    private String nom;
-    private double preu;
-    protected static int instancesCreated = 0;
-
-    public Instrument(String nom, double preu) {
-        this.nom = nom;
-        this.preu = preu;
-        instancesCreated++;
-    }
-
-    // Mètode abstracte
-    public abstract void tocar();
-}
-
-// Classe Vent que hereta de Instrument
-class Vent extends Instrument {
-    public Vent(String nom, double preu) {
-        super(nom, preu);
-    }
-
-    @Override
-    public void tocar() {
-        System.out.println("Està sonant un instrument de vent");
-    }
-}
-
-// Classe Corda que hereta de Instrument
-
-class Corda extends Instrument {
-    public Corda(String nom, double preu) {
-        super(nom, preu);
-    }
-
-    @Override
-    public void tocar() {
-        System.out.println("Està sonant un instrument de corda");
-    }
-}
-
-// Classe Percussio que hereta de Instrument
-class Percussio extends Instrument {
-    public Percussio(String nom, double preu) {
-        super(nom, preu);
-    }
-
-    @Override
-    public void tocar() {
-        System.out.println("Està sonant un instrument de percussió");
-    }
-}
 
 public class Main {
     public static void main(String[] args) {
@@ -59,10 +7,10 @@ public class Main {
         System.out.println("Creació de la primera instància:");
         Vent flauta = new Vent("Flauta", 150);
         flauta.tocar();
-        System.out.println("Creació de la segona instància:");
+        System.out.println("\nCreació de la segona instància:");
         Corda guitarra = new Corda("guitarra", 300);
         guitarra.tocar();
-        System.out.println("Creació de la tercera instància:");
+        System.out.println("\nCreació de la tercera instància:");
         Percussio bateria=new Percussio("bateria",500);
         bateria.tocar();
         // Accés a un membre estàtic
